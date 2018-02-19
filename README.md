@@ -13,17 +13,17 @@ The profiles use a LookTable and ToneCuve. These can be copied in to any dng pro
 
 Included for each film stock are:
 * xml text files containing the LookTable and ToneCuve
-* cube lut (linear proPhoto color space)
+* cube lut
 * xml and dng profiles for the fuji xt-1 and panasonic gh3
 
 `defaultBlackRender` should be set to `1` in the xml for accurate black level
 
-I use dcpTool to convert xml to dcp
+I use dcpTool to convert between xml and dcp
 
 ### Licencing
 
 These profiles are licenced as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-This means you may modify, make derivitives, or distribute them, eg; for another camera make and model. But you must attribute the source, share with same licence, and not sell them.
+This means you may modify, make derivitives, or distribute them, eg; for another camera make and model. But you must attribute this source, share with same licence, and not sell them.
 
 All Photographs produced with these profiles are entirely your own work, and not derivitives. The licence applys only to the profiles.
 
