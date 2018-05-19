@@ -9,17 +9,19 @@ The Film Stocks are:
 * Classic Chrome
 
 ## Technical Details
-The profiles use a LookTable and ToneCuve. These can be copied in to any dng profile. Ones based on adobe standard profiles are included as examples
+The profiles use a LookTable and ToneCuve.
+Dcp profiles based on adobe standard are included as examples
 
 Included for each film stock are:
 * xml text files containing the LookTable and ToneCuve
 * cube lut
 * xml and dng profiles for the fuji xt-1 and panasonic gh3
 
-`defaultBlackRender` should be set to `1` in the xml for accurate black level
+`<DefaultBlackRender>` should be set to `1` in the xml for accurate black level
 
 I use dcpTool to convert between xml and dcp
 
+To make a profile for a different camera, replace the `<LookTable>` and `<ToneCuve>` xml tags in any dng profile.
 ### Licencing
 
 These profiles are licenced as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
