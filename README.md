@@ -17,11 +17,11 @@ Included for each film stock are:
 * cube lut
 * xml and dng profiles for the fuji xt-1 and panasonic gh3
 
-`<DefaultBlackRender>` should be set to `1` in the xml for accurate black level
-
 I use dcpTool to convert between xml and dcp
 
 To make a profile for a different camera, replace the `<LookTable>` and `<ToneCuve>` xml tags in any dng profile.
+
+`<DefaultBlackRender>` should be set to `1` in the xml for accurate black level
 ### Licencing
 
 These profiles are licenced as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
