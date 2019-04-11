@@ -22,6 +22,8 @@ I use dcpTool to convert between xml and dcp
 To make a profile for a different camera, replace the `<LookTable>` and `<ToneCuve>` xml tags in any dng profile.
 
 `<DefaultBlackRender>` should be set to `1` in the xml for accurate black level
+
+for profiles3.0, `<ProfileLookTableEncoding>` is now set to `1`
 ### Licencing
 
 These profiles are licenced as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
