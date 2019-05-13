@@ -19,11 +19,15 @@ Included for each film stock are:
 
 I use dcpTool to convert between xml and dcp
 
-To make a profile for a different camera, replace the `<LookTable>` and `<ToneCuve>` xml tags in any dng profile.
+To make a profile for a different camera: 
+* take an existing profile for that camera
+* convert it to xml
+* replace the `<LookTable>` and `<ToneCuve>` xml tags with the ones from the film look text file
+* `<DefaultBlackRender>` should be set to `1`
+* for profiles 3.0, `<ProfileLookTableEncoding>` is now set to `1`
+* change `<ProfileName>`
+* convert back to dcp
 
-`<DefaultBlackRender>` should be set to `1` in the xml for accurate black level
-
-for profiles3.0, `<ProfileLookTableEncoding>` is now set to `1`
 ### Licencing
 
 These profiles are licenced as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
