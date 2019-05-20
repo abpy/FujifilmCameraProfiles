@@ -25,7 +25,7 @@ To make a profile for a different camera:
 * convert it to xml
 * replace the `<LookTable>` and `<ToneCuve>` xml tags with the ones from the film look text file
 * `<DefaultBlackRender>` should be set to `1`
-* for profiles 3.0, `<ProfileLookTableEncoding>` is now set to `1`
+* `<ProfileLookTableEncoding>` should be set to `1`
 * change `<ProfileName>`
 * convert back to dcp
 
