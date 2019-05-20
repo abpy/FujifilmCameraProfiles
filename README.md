@@ -10,12 +10,13 @@ The Film Stocks are:
 
 ## Technical Details
 The profiles use a LookTable and ToneCuve.
-Dcp profiles based on adobe standard are included as examples
+Dng profiles based on adobe standard are included as examples
 
 Included for each film stock are:
-* xml text files containing the LookTable and ToneCuve
+* xml text file containing the LookTable and ToneCuve for dcp profiles
+* xml and dcp profiles for the fuji xt-1 and panasonic gh3
 * cube lut
-* xml and dng profiles for the fuji xt-1 and panasonic gh3
+* the cube lut and csv tables can be used with adobe's look profiles (xmp preset)
 
 I use dcpTool to convert between xml and dcp
 
