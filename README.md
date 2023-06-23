@@ -1,27 +1,37 @@
 # Fujifilm Camera Profiles
 
-This is a set of four camera profiles for use with raw images from digital cameras. They are made to match the film look profiles available in adobe cameraraw / lightroom for fuji X-cameras.
+This is a set of camera profiles for use with raw images from digital cameras. They are based on the camera matching profiles available in adobe cameraraw / lightroom for fuji X-cameras.
 
-The Film Stocks are:
+The Film Looks are:
 * Provia
 * Velvia
 * Astia
 * Classic Chrome
+* Pro neg std
+* Pro neg hi
+* Eterna
+* Classic Neg
 
-## Technical Details
-The profiles use a LookTable and ToneCurve.
-Dng profiles based on adobe standard are included as examples
-
-Included for each film stock are:
+## Usage
+Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
-* xml and dcp profiles for the fuji xt-1 and panasonic gh3
-* cube lut
-* the cube lut and csv tables can be used with adobe's look profiles (xmp preset)
+* cube lut (3d color look-up-table)
+* xml and dcp profiles as examples
 
-I use dcpTool to convert between xml and dcp
+For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
-To make a profile for a different camera: 
-* take an existing profile for that camera
+#### cube lut
+The cube LUTs are in the DisplayP3 color space. They are intended to be applied to a neutral and linear image. A linear camera profile is required for correct colors.
+
+The Classic Neg profile is only avalable as a cube lut.
+
+#### dcp camera profile
+The dcp profiles use a LookTable and ToneCurve.
+
+To make a profile, use [dcptool](https://dcptool.sourceforge.net/Introduction.html) to convert between xml and dcp.
+
+To make a profile for your camera:
+* find an existing dcp profile for that camera. ex. Adobe Standard
 * convert it to xml
 * replace the `<LookTable>` and `<ToneCurve>` xml tags with the ones from the film look text file
 * `<DefaultBlackRender>` should be set to `1`
