@@ -15,7 +15,7 @@ The Film Looks are:
 ## Usage
 Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
-* cube lut (3d color look-up-table)
+* cube lut (3d rgb look-up-table)
 * xml and dcp profiles as examples
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
@@ -23,7 +23,7 @@ For more details on editing profiles and making a linear profile for use with th
 #### cube lut
 The cube LUTs are in the DisplayP3 color space. They are intended to be applied to a neutral and linear image. A linear camera profile is required for correct colors.
 
-The Classic Neg profile is only avalable as a cube lut.
+The Classic Neg profile is only available as a cube lut.
 
 #### dcp camera profile
 The dcp profiles use a LookTable and ToneCurve.
@@ -34,8 +34,8 @@ To make a profile for your camera:
 * find an existing dcp profile for that camera. ex. Adobe Standard
 * convert it to xml
 * replace the `<LookTable>` and `<ToneCurve>` xml tags with the ones from the film look text file
-* `<DefaultBlackRender>` should be set to `1`
-* `<ProfileLookTableEncoding>` should be set to `1`
+* set `<DefaultBlackRender>` to `1`
+* set `<ProfileLookTableEncoding>` to `1`
 * change `<ProfileName>`
 * convert back to dcp
 
