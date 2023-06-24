@@ -1,6 +1,6 @@
 # Fujifilm Camera Profiles
 
-This is a set of camera profiles for use with raw images from digital cameras. They are based on the camera matching profiles available in adobe cameraraw / lightroom for fuji X-cameras.
+This is a set of camera profiles for use with raw images from digital cameras. They are based on the camera matching profiles available in adobe cameraraw / lightroom for fuji X-cameras. This latest version is based on a more recent camera model: the x-pro3.
 
 The Film Looks are:
 * Provia
@@ -21,7 +21,7 @@ Included for each profile are:
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
 #### cube lut
-The cube LUTs are in the DisplayP3 color space. They are intended to be applied to a neutral and linear image. A linear camera profile is required for correct colors.
+The cube LUTs are in the DisplayP3 color space. They are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result.
 
 The Classic Neg profile is only available as a cube lut.
 
