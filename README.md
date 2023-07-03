@@ -15,13 +15,15 @@ The Film Looks are:
 ## Usage
 Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
-* cube lut (3d rgb look-up-table)
+* cube luts (3d rgb look-up-table)
+  * .cube in both DisplayP3 and sRGB
+  * .png CLUT in sRGB
 * xml and dcp profiles as examples
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
 #### cube lut
-The cube LUTs are in the DisplayP3 color space. They are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result.
+The cube LUTs are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result.
 
 The Classic Neg profile is only available as a cube lut.
 
