@@ -22,8 +22,7 @@ Included for each profile are:
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
-#### cube lut
-The cube LUTs are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result.
+The cube LUTs are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result. See below for details
 
 The Classic Neg profile is only available as a cube lut.
 
@@ -41,7 +40,20 @@ To make a profile for your camera:
 * change `<ProfileName>`
 * convert back to dcp
 
-### Licensing
+#### Using the cube luts, including "Classic Neg", in CameraRaw / Lightroom
+You will need a [linear camera profile](https://abpy.github.io/2023/05/20/linear-profiles.html)
+* Open an image with default settings (everything at 0, white balance: 'As Shot')
+* Select the linear camera profile
+* Option/Alt click the new preset button
+* Change the profile name
+* Select the Color Lookup Table checkbox
+* Choose the cube file
+* Set Space to Display P3
+* Set Amount Min and Max to 100
+
+![create profile dialog](/xmp_profile.png)
+
+## Licensing
 
 These profiles are licensed as [cc-by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 This means you may modify, make derivatives, or distribute them, eg; for another camera make and model. But you must attribute this source, share with same license, and not sell them.
