@@ -12,6 +12,9 @@ The Film Looks are:
 * Eterna
 * Classic Neg
 
+## New: Conversion luts for Classic Neg, Bleach Bypass, and Nostalgic Neg
+These luts will convert images processed with Provia to the classic neg, bleach bypass, or nostalgic neg film simulations. They can be used with non fuji cameras using the the dng tables provided here, or with fuji x-trans cameras that don't come with these profiles using the Provia camera matching profile. They can also be applied directly to camera jpegs. The .cube files can be found in `provia conversion luts/` and are provided in both DisplayP3 and sRGB.
+
 ## Usage
 Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
