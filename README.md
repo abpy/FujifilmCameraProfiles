@@ -1,6 +1,6 @@
 # Fujifilm Camera Profiles
 
-This is a set of camera profiles for use with raw images from digital cameras. They are based on the camera matching profiles available in adobe cameraraw / lightroom for fuji X-cameras. This latest version is based on a more recent camera model: the x-pro3.
+This is a set of camera profiles for use with raw images from digital cameras. They are based on the camera matching profiles available in adobe cameraraw / lightroom for fuji X-cameras. This latest version is based on an x-trans 4 camera.
 
 The Film Looks are:
 * Provia
@@ -10,24 +10,31 @@ The Film Looks are:
 * Pro neg std
 * Pro neg hi
 * Eterna
-* Classic Neg
+* Reala Ace
+* Classic Neg (lut only)
+* Nostalgic Neg (lut only)
+* Bleach Bypass (lut only)
 
-## New: Conversion luts for Classic Neg, Bleach Bypass, and Nostalgic Neg
-These luts will convert images processed with Provia to the classic neg, bleach bypass, or nostalgic neg film simulations. They can be used with non fuji cameras using the the dng tables provided here, or with fuji x-trans cameras that don't come with these profiles using the Provia camera matching profile. They can also be applied directly to camera jpegs. The .cube files can be found in `provia conversion luts/` and are provided in both DisplayP3 and sRGB.
+## Update: Nov 22 2025. Improved luts
+The luts now have improved accuracy and smoothness, especially for bright or saturated colors.
+
+dcp profiles have increased precision and are now a more accurate match to the lut. I have found that there is still a small discrepancy in how adobe applies the tone curve. This only affects some very bright and saturated colors.
+
+Added 'Reala Ace' film simulation (lut and profile) and direct luts for Nostalgic Neg and Bleach Bypass.
 
 ## Usage
 Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
 * cube luts (3d rgb look-up-table)
   * .cube in both DisplayP3 and sRGB
-  * .png CLUT in sRGB
-* xml and dcp profiles as examples
+  * .png CLUT in sRGB (update comming soon)
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
 The cube LUTs are intended to be applied to an image with linear contrast. A linear camera profile is required for a correct result. See below for details
 
-The Classic Neg profile is only available as a cube lut.
+#### Conversion luts for Classic Neg, Bleach Bypass, and Nostalgic Neg
+These luts will convert images processed with Provia to the classic neg, bleach bypass, or nostalgic neg film simulations. They can be used with non fuji cameras using the the dng tables provided here, or with fuji x-trans cameras that don't come with these profiles using the Provia camera matching profile. They can also be applied directly to camera jpegs. The .cube files can be found in `provia conversion luts/` and are provided in both DisplayP3 and sRGB.
 
 #### dcp camera profile
 The dcp profiles use a LookTable and ToneCurve.
