@@ -27,7 +27,7 @@ Included for each profile are:
 * text file containing the xml LookTable and ToneCurve for dcp profiles
 * cube luts (3d rgb look-up-table)
   * .cube in both DisplayP3 and sRGB
-  * .png CLUT in sRGB (update comming soon)
+  * .png lut (HaldCLUT) in sRGB
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
@@ -50,7 +50,7 @@ To make a profile for your camera:
 * change `<ProfileName>`
 * convert back to dcp
 
-#### Using the cube luts, including "Classic Neg", in CameraRaw / Lightroom
+#### Using the cube luts in CameraRaw / Lightroom
 You will need a [linear camera profile](https://abpy.github.io/2023/05/20/linear-profiles.html)
 * Open an image with default settings (everything at 0, white balance: 'As Shot')
 * Select the linear camera profile
