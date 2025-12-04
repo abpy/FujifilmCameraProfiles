@@ -50,7 +50,7 @@ To make a profile for your camera:
 * change `<ProfileName>`
 * convert back to dcp
 
-#### Using the cube luts in CameraRaw / Lightroom
+#### Using the cube luts in CameraRaw
 You will need a [linear camera profile](https://abpy.github.io/2023/05/20/linear-profiles.html)
 * Open an image with default settings (everything at 0, white balance: 'As Shot')
 * Select the linear camera profile
