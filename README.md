@@ -28,7 +28,9 @@ Included for each profile are:
 * cube luts (3d rgb look-up-table)
   * .cube in both DisplayP3 and sRGB
   * .png lut (HaldCLUT) in sRGB
-* For icc profiles for use in Capture One, see: [onepill/FujifilmCameraProfiles](https://github.com/onepill/FujifilmCameraProfiles/), provided by Siyuan Zhang(onepill)
+* icc/icm files(which Capture One could use)
+  * profiles in the 50% folder are lighter versions
+
 
 For more details on editing profiles and making a linear profile for use with the luts, see my blog post [Making Linear Camera Profiles with dcpTool](https://abpy.github.io/2023/05/20/linear-profiles.html)
 
