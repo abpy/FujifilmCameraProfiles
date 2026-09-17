@@ -1,0 +1,13 @@
+# Generated Profiles & Build Output
+output/
+
+# Compiled files & caches
+__pycache__/
+*.pyc
+
+# Local dcpTool binaries
+dcptool.exe
+dcptool
+iconv.dll
+libxml2.dll
+zlib1.dll
